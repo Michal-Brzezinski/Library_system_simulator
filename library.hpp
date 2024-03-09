@@ -1,12 +1,15 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <vector>
+#include "book.hpp"
 
 using namespace std;
 
 class library
 {
 	public:
+		
 		addBook(Book b);
 		removeBook(Book b);
 		borrowBook(Member, isbn);
@@ -14,6 +17,6 @@ class library
 		displayBooks();
 
 	private:
-
+		std::vector<Book> books;
 
 };
