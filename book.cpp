@@ -4,12 +4,12 @@
 
 Book::Book(string title, string author, string isbn) : m_title(title), m_author(author), m_isbn(isbn)
 {
-
+	m_availability = true;
 }
 
 Book::~Book()
 {
-	std::cout << "Ksiazka jest teraz niszczona\n" << std::endl;
+	std::cout << "Niszcze ksiazke\n" << std::endl;
 }
 	
 	void Book::getInfo()
