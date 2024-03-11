@@ -2,9 +2,9 @@
 #include <string>
 #include "book.hpp"
 
-Book::Book(string title, string author, string isbn) : m_title(title), m_author(author), m_isbn(isbn)
+Book::Book(string title, string author, string isbn) : m_title(title), m_author(author), m_isbn(isbn), m_availability(true)
 {
-	m_availability = true;
+	
 }
 
 Book::~Book()
@@ -14,7 +14,7 @@ Book::~Book()
 	
 	void Book::getInfo()
 	{
-		std::cout << "Tytul: " << m_title << "\nAutor: " << m_author << "\nnr Isbn: " << m_isbn << std::endl;
+		std::cout << "\nTytul: " << m_title << "\nAutor: " << m_author << "\nnr Isbn: " << m_isbn << "\nDostepnosc: "<<m_availability<<std::endl;
 	}
 
 	

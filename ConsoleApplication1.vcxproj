@@ -129,9 +129,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="book.cpp" />
+    <ClCompile Include="combination.cpp" />
+    <ClCompile Include="GUI.cpp" />
     <ClCompile Include="library.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="member.cpp" />
+    <ClCompile Include="service.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="book.hpp" />

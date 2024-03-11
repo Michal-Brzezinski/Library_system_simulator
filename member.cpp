@@ -5,12 +5,9 @@
 Member::Member(string name)
 {
 	m_name = name;
+	setMembersBooks(0);
 }
 
-Member::~Member()
-{
-	std::cout << "Teraz jest niszczony uzytkownik (member)\n";
-}
 
 void Member::setMembersName(string name)
 {
@@ -30,6 +27,13 @@ void Member::setMembersBooks(unsigned int BooksBorrowed)
 unsigned int Member::getMembersBooks()
 {
 	return m_BooksBorrowed;
+}
+
+
+void Member::getInfo()
+{
+
+	std::cout << "\nNazwa: " << m_name << "\nPozyczonych ksiazek: " << m_BooksBorrowed << std::endl;
 }
 
 void Member::borrowBook()
